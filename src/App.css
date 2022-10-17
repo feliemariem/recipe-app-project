@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display+SC');
+
+.App {
+  padding: 1em;
+}
+
+label {
+  display: inline-block;
+  width: 100px;
+}
+
+header {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* typography */
+
+h1 {
+  font-family: "Playfair Display SC";
+  font-size: 64px;
+  text-align: center;
+}
+
+html {
+  font-family: 'helvetica neue', sans-serif;
+}
+
+thead th, tfoot th {
+  font-family: 'Rock Salt';
+  font-size: 22px;
+}
+
+th {
+  letter-spacing: 2px;
+  padding: 10px;
+}
+
+td {
+  font-family: 'Open Sans';
+  letter-spacing: 1px;
+  overflow-x:hidden;
+  overflow-y:hidden;
+  font-size: 14px;
+  padding: 10px;
+  text-align: center;
+}
+
+/* table */
+
+img {
+  object-fit: scale-down;
+  width: 100%;
+  height: 100%;
+}
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  overflow:hidden;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.content_td p {
+  max-width: 100%;
+  max-height: 100px;
+  overflow-y: auto;
+  text-overflow: ellipsis;
+}
+
+
+td textarea {
+  overflow-y: hidden;
+  overflow: auto;
+}
+
+
+tbody tr:nth-child(odd) {
+  background-color: #92aeb3;
+}
+
+/* Column Size for thead */
+thead {
+  background: #f7f7f0;
+}
+
+
+/* Column size for tbody */
+tbody {
+  width: 30%;
+}
