@@ -1,10 +1,5 @@
 import React, { useState } from "react";
 
-  // TODO: When the form is submitted, a new recipe should be created, and the form contents cleared.
-  // TODO: Add the required input and textarea form elements.
-  // TODO: Add the required submit and change handlers
-  
-
 function RecipeCreate({createNewRecipes}) {
   
   const initialFormState = {
@@ -44,6 +39,7 @@ function RecipeCreate({createNewRecipes}) {
               onChange={handleChange}
               value={formData.name}
               placeholder = "Name"
+              required={true}
               />
               </label>
             </td>
@@ -57,6 +53,7 @@ function RecipeCreate({createNewRecipes}) {
               onChange={handleChange}
               value={formData.cuisine}
               placeholder = "Cuisine"
+              required={true}
               />
               </label>
             </td>
@@ -70,6 +67,7 @@ function RecipeCreate({createNewRecipes}) {
               onChange={handleChange}
               value={formData.photo}
               placeholder = "URL"
+              required={true}
               />
               </label>
             </td>
@@ -84,6 +82,7 @@ function RecipeCreate({createNewRecipes}) {
               value={formData.ingredients}
               placeholder = "Ingredients"
               rows={5}
+              required={true}
               />
               </label>
               
@@ -99,6 +98,7 @@ function RecipeCreate({createNewRecipes}) {
               value={formData.preparation}
               placeholder = "Preparation"
               rows={5}
+              required={true}
               />
               </label>
              
